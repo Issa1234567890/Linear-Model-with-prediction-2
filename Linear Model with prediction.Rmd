@@ -72,4 +72,9 @@ basicNN + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_te
 cor(SIMS~GRIP,data=data)
 ```
 
+### Inferential Results Model2
 
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
+```
